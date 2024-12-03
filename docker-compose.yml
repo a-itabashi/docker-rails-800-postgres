@@ -15,7 +15,7 @@ services:
       dockerfile: Dockerfile.dev
     command: bash -c "bundle exec rails s -b '0.0.0.0'"
     volumes:
-      - ./rails-app
+      - .:/rails-app
     ports:
       - 3000:3000
     depends_on:
